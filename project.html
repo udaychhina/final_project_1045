@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CPSC1045 &mdash; Project Title</title>
+		<meta charset="UTF-8">
+        <script src="project.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                text-align: center;
+            }
+            .center {
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1 {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            h3,p {
+                width: 500px;
+                padding: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            button {
+                padding: 2px;
+            }
+        </style>
+	</head>
+    <body onload="setup()">
+        <div class="center">
+            <h1>Project</h1>
+            <p>Get your hands to a soap to wash them. <br>Make sure to maintain responsible distance from people and watch out for the coronavirus! <br>You can drop masks to capture coronavirus and gain more points. <br>Get the hospital when it appears to double score instantly!!
+            </p>
+            <canvas id="surface" width="500" height="500" style="border:2px solid black"></canvas>
+            <h3 id="handCount"></h3>
+            <button onclick="reset();">Reset</button><br>
+            <button onclick="play();">Let Virus Move</button><br>
+            <button onclick="pause();">Stop Virus</button><br>
+        </div>  
+	</body>
+</html>
